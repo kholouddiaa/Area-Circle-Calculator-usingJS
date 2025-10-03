@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Area Circle Calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container mt-5">
+    <!-- الكارد الأساسي -->
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card p-4 shadow text-center">
+          <h1>Circle Calculator</h1>
+          <div class="form-group text-left">
+            <label for="radius">Radius:</label>
+            <input type="number" class="form-control" id="radius" placeholder="Enter radius" />
+          </div>
+          <button type="button" id="calculateBtn" class="btn btn-primary btn-block">
+            Calculate Area & Circumference
+          </button>
+          <div class="mt-4">
+            <button type="button" id="resetBtn" class="btn btn-secondary btn-block">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- الكارد بتاع النتيجة (مخفي في الأول) -->
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-6">
+        <div class="card p-4 shadow text-center d-none" id="resultCard">
+          <h1>Results</h1>
+          <div class="mt-4">
+            <h2 id="area"></h2>
+            <h2 id="circumference"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
